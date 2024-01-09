@@ -1,0 +1,205 @@
+.imgListContainer {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.imgListCnt {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+.imgListCnt span {
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0,0,0,.24);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    width: 50px;
+}
+
+.back {
+    width: 30px;
+}
+
+.heading {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+.addImage, .clear {
+    background-color: rgba(0,119,255,.1);
+    border: 3px solid #07f;
+    border-radius: 5px;
+    color: #07f;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.clear {
+    color: #ff1300;
+    border: 3px solid #ff1300;
+    background-color: rgba(255,19,0,.1);
+}
+
+.imgformCnt {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px auto 30px;
+    padding: 20px;
+    width: 50vw;
+}
+
+.urImg {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.imgForm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.imgTitle, .imgSrc {
+    border: 3px solid transparent;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    outline: none;
+    padding: 10px 10px 10px 15px;
+    transition: .3s;
+    width: 90%;
+}
+
+.imgFormActions {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.imgFormActionBtn:first-of-type {
+    background-color: #ff1300;
+}
+
+.imgFormActionBtn {
+    background-color: #07f;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.24);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    padding-block: 7px;
+    width: 100px;
+}
+
+.srchCnt {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.srchCnt img {
+    cursor: pointer;
+    width: 30px;
+}
+
+.imglistCnt {
+    grid-gap: 20px;
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-auto-rows: 150px;
+    grid-template: repeat(1,150px) /repeat(auto-fit,minmax(175px,.5fr));
+    margin-bottom: 50px;
+}
+
+.imgList {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    width: 100%; 
+}
+
+.editBtn {
+    right: 30px;
+}
+
+.editBtn img {
+    width: 35px;
+}
+
+.deleteBtn img {
+    width: 35px;
+}
+
+.deleteBtn{
+    display: none;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    transition: .3s;
+}
+
+.editBtn {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: -15px;
+    transition: 0.3s;
+}
+
+.show {
+    display: block !important;
+}
+
+.image {
+    height: 80%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.srchInput {
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+}
+
+.carouselOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Adjust the z-index to ensure it's on top of other elements */
+}

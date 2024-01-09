@@ -1,0 +1,17 @@
+.navCnt {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: no-repeat linear-gradient(0deg, rgba(34,195,140,0.8343659729516807) 0%, rgba(45,188,253,0.8119570093662465) 170%);
+    height: 100%;
+}
+
+.navLogo {
+    height: 3%;
+    width: 3%;
+    margin: 0.5%;
+}
+
+.navName {
+    font-size: 100%;
+}
